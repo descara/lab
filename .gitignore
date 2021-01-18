@@ -1,2 +1,10 @@
-config/
+config/bazarr/
+config/jackett/
+config/nginx/
+config/nzbhydra2/
+config/sonarr/
+config/radarr/
+config/transmission/
+config/ssl/
+config/sabnzbd/
 nginx/
