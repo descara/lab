@@ -34,8 +34,8 @@ services:
       - UMASK_SET=022
     volumes:
       - ./config/sonarr:/config
-      - ~/shares/Content/TV:/tv
-      - ~/shares/Content/Anime:/anime
+      - data-volume/TV:/tv
+      - data-volume/Anime:/anime
       - ~/shares/Downloads:/downloads
     ports:
       - 8989:8989
