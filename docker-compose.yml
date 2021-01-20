@@ -1,4 +1,12 @@
 version: "2.1"
+volumes:
+  data-volume:
+    driver: local
+    driver_opts:
+      type: "nfs"
+      o: "addr=192.168.1.100,async,nolock,soft,rw"
+      devices: /volume1/Content
+
 services:
   radarr:
     image: ghcr.io/linuxserver/radarr
@@ -112,3 +120,4 @@ services:
       - 51413:51413
       - 51413:51413/udp
     restart: unless-stopped
+
